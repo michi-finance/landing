@@ -1,0 +1,179 @@
+@import "variables";
+@import "bg";
+@import "shadows";
+@import "carousel";
+@import "footer";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+  @apply text-8xl;
+}
+
+h2 {
+  @apply text-7xl;
+}
+
+h3 {
+  @apply text-6xl;
+}
+
+h4 {
+  @apply text-5xl;
+}
+
+h5 {
+  @apply text-4xl;
+}
+
+header {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-medium;
+  @apply tracking-tight;
+  font-family: 'Manrope', sans-serif;
+}
+
+p{
+  color: #fff;
+  @apply font-medium;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0A0B12;
+  font-family: 'Manrope', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tooltip {
+  max-width: 400px;
+  box-shadow: 0px 4px 13px 0px #2A365C inset;
+  background: linear-gradient(270deg, #2C3B67 9.92%, #060B1C 100%);
+  border: 1px solid #27345C;
+  padding: 1.5rem;
+  color: #E2EAFF;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.max-page-width {
+  max-width: 576px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .max-page-width {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .max-page-width {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .max-page-width {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .max-page-width {
+    max-width: 1600px;
+  }
+}
+
+.text-font-gradient {
+  color: rgba(255, 255, 255, 0.80);
+  display: inline-block;
+}
+
+.card {
+  @apply bg-custom-gradient border-custom border-custom-border rounded-custom shadow-custom;
+}
+
+.about-card {
+  @apply bg-custom-gradient border-custom border-custom-border rounded-custom shadow-custom;
+  background: linear-gradient(142deg, #0A0B12 49.6%, #3A2829 102.62%);
+}

@@ -1,0 +1,26 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  /* Ensures shadows don't extend outside the container */
+}
+
+.carousel-shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  /* Adjust the width of the shadow */
+  pointer-events: none;
+  /* Prevents the shadow from blocking click events */
+  z-index: 10;
+}
+
+.carousel-shadow.left {
+  left: 0;
+  background: linear-gradient(to right, #0A0B12, transparent);
+}
+
+.carousel-shadow.right {
+  right: 0;
+  background: linear-gradient(to left, #0A0B12, transparent);
+}

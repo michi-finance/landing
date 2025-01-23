@@ -1,0 +1,56 @@
+.shadow-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  pointer-events: none;
+  opacity: 1;
+  background-image: linear-gradient(to bottom, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 7.5%);
+}
+
+@media (max-width: 768px) {
+  .shadow-divider-top {
+    background-image: linear-gradient(to bottom, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 3.75%);
+  }
+}
+
+.shadow-divider-top-lg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  background-image: linear-gradient(to bottom, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 50%);
+}
+
+@media (max-width: 768px) {
+  .shadow-divider-top-lg {
+    background-image: linear-gradient(to bottom, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 50%);
+  }
+}
+
+.shadow-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  background-image: linear-gradient(to top, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 35%);
+}
+
+@media (max-width: 768px) {
+  .shadow-divider-bottom {
+    background-image: linear-gradient(to top, rgba(10, 11, 18, 1) 0%, rgba(10, 11, 18, 0) 35%);
+  }
+}
